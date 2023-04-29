@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Models;
-class UrlRecord
+class RecordResults
 {
     protected string $url;
 

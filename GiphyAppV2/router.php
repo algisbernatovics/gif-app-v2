@@ -7,10 +7,10 @@ $dotenv->load();
 
 $dispatcher = FastRoute\simpleDispatcher(function (FastRoute\RouteCollector $r) {
 
-    $r->addRoute(['POST'], '/searchGifs', 'App\Controller\ClientController@searchGifs');
-    $r->addRoute(['GET'], '/trending', 'App\Controller\ClientController@trending');
-    $r->addRoute(['GET'], '/home', 'App\Controller\ClientController@home');
-
+    $r->addRoute(['POST'], '/search', 'App\Controller\Controller@search');
+    $r->addRoute(['GET'], '/trending', 'App\Controller\Controller@trending');
+    $r->addRoute(['GET'], '/random', 'App\Controller\Controller@random');
+    $r->addRoute(['GET'], '/home', 'App\Controller\Controller@home');
 });
 
 // Fetch method and URI from somewhere
