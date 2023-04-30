@@ -16,3 +16,10 @@ form {
     color: red;
     line-height: 30px;
 }
+
+.gif-container {
+    width: 1000px;
+    line-height: 5;
+    margin: auto;
+    background: whitesmoke;
+}
